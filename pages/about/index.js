@@ -80,7 +80,7 @@ import CountUp from 'react-countup'
 const About = () => {
   const [index, setIndex] = useState(0);
   console.log(index)
-  return <div className='h-full bg-primary/30 py-32 text-center xl:text-left'>
+  return <div className='h-full  bg-primary/30 py-32 text-center xl:text-left'>
     <Circles />
     <motion.div
       variants={fadeIn('right', 0.2)}
@@ -99,7 +99,7 @@ const About = () => {
           initial="hidden"
           animate="show"
           exit="hidden"
-          className='h2 mt-12'>Era Uma Vez <span className='text-accent'> ...</span> </motion.h2>
+          className='h2 max-mb:hidden'>Era Uma Vez <span className='text-accent'> ...</span> </motion.h2>
 
 
 
@@ -108,8 +108,8 @@ const About = () => {
           initial="hidden"
           animate="show"
           exit="hidden"
-          className='max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0'>Há 2 anos, dei início a jornada na área da Tecnologia.  Desde então, tenho mergulhado em estudos, buscando dominar esse mundo.
-          <br/>Tenho me desenvolvido na área através da criação de aplicações freelancer. <br/>Cada projeto é uma oportunidade para encontrar soluções inovadoras para os problemas.
+          className='max-w-[500px] mx-auto xl:mx-0 mb-4 xl:mb-12 px-2 xl:px-0 max-mb:mt-4'>Há 2 anos, dei início na área da Tecnologia.  Desde então, tenho buscado dominar esse mundo.
+          <br/>Tenho me desenvolvido na área através da criação de aplicações freelancer. <br/>Cada projeto é uma oportunidade para encontrar soluções.
         </motion.p>
 
         <motion.div
@@ -156,7 +156,7 @@ const About = () => {
         animate="show"
         exit="hidden"
         className='flex flex-col w-full xl:max-w-[48%] h-[480px]'>
-        <div className='flex gap-x-4 xl:gap-x-8 mx-auto xl:mx-0 mb-4'>
+        <div className='flex gap-x-4 xl:gap-x-8 mx-auto xl:mx-0 mb-0'>
           {aboutData.map((item, itemIndex) => {
             return (
               <div
