@@ -1,6 +1,4 @@
 /* eslint-disable react/no-unescaped-entities */
-import Circles from '/components/Circles';
-
 import { BsArrowRight } from 'react-icons/bs'
 
 import { motion } from 'framer-motion'
@@ -19,7 +17,7 @@ const Contact = () => {
     initial="hidden" 
     animate="show" 
     exit="hidden" 
-    className='h2 text-center mb-12'>Let's <span className='text-accent'>connect.</span></motion.h2>
+    className='h2 text-center md:mb-12'>Vamos <span className='text-accent'>Conversar.</span></motion.h2>
 
     <motion.form   
     variants={fadeIn('up',0.4)} 
@@ -33,7 +31,7 @@ const Contact = () => {
       <input type='text' placeholder='Assunto' className='input'/>
       <textarea placeholder='Mensagem' className='textarea'></textarea>
       <button className='btn rounded-full border border-white/50 max-w-[170px] px-8 transition-all duration-300 flex items-center justify-center overflow-hidden hover:border-accent group'>
-        <span className='group-hover:-translate-y-[120%] group-hover:opacity-0 transition-all duration-500'>Let's talk</span>
+        <span className='group-hover:-translate-y-[120%] group-hover:opacity-0 transition-all duration-500'>Enviar</span>
       <BsArrowRight className='-translate-y-[120%] opacity-0 group-hover:flex group-hover:-translate-y-0 group-hover:opacity-100 transition-all duration-300 absolute text[22px]'/></button>
     </motion.form >
       </div>

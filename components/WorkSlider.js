@@ -5,6 +5,7 @@ import 'swiper/css/free-mode'
 import 'swiper/css/pagination'
 import { Pagination } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react'
+import Link from 'next/link';
 
 
 // data
@@ -14,42 +15,50 @@ const workSlides = {
       images: [
         {
           title: 'title',
-          path: '/thumb1.jpg',
+          path: '/petshop.png',
+          link: 'https://petshop-flame.vercel.app'
         },
         {
           title: 'title',
-          path: '/thumb2.jpg',
+          path: '/tatto.png',
+          link: 'https://tatto-studio-beta.vercel.app'
+
         },
         {
           title: 'title',
-          path: '/thumb3.jpg',
+          path: '/photo.png',
+          link: 'https://fotografia-red.vercel.app'
+
         },
-        {
-          title: 'title',
-          path: '/thumb4.jpg',
-        },
-      ],
-    },
-    {
-      images: [
         {
           title: 'title',
           path: '/thumb4.jpg',
-        },
-        {
-          title: 'title',
-          path: '/thumb1.jpg',
-        },
-        {
-          title: 'title',
-          path: '/thumb2.jpg',
-        },
-        {
-          title: 'title',
-          path: '/thumb3.jpg',
+          link: '/'
+
         },
       ],
     },
+    // {
+      // images: [
+      //   // {
+      //   //   title: 'title',
+      //   //   path: '/thumb4.jpg',
+          
+      //   // },
+      //   // {
+      //   //   title: 'title',
+      //   //   path: '/thumb1.jpg',
+      //   // },
+      //   // {
+      //   //   title: 'title',
+      //   //   path: '/thumb2.jpg',
+      //   // },
+      //   // {
+      //   //   title: 'title',
+      //   //   path: '/thumb3.jpg',
+      //   // },
+      // ],
+    // },
   ],
 };
 
@@ -74,7 +83,9 @@ const WorkSlider = () => {
         return <SwiperSlide key={index}>
           <div className='grid grid-cols-2 grid-rows-2 gap-4 cursor-pointer' >{slide.images.map((image, index) => {
             return (
+              
               <div className='relative rounded-lg overflow-hidden flex items-center justify-center group' key={index} >
+           
                 <div className='flex items-center justify-center relative overflow-hidden group'>
                   <Image src={image.path} width={500} height={300} alt='work' />
 
@@ -84,9 +95,9 @@ const WorkSlider = () => {
                     <div className='flex items-center gap-x-2 text-[13px] tracking-[0.2em]'>
 
                       {/* title 1 */}
-                      <div className='delay-100'>LIVE</div>
+                      <div className='delay-100'><Link target='_blank' href={image.link}>Visitar</Link></div>
                       {/* title 2 */}
-                      <div className='translate-y-[500%] group-hover:translate-y-0 transition-all duration-300 delay-150'>PROJECT</div>
+                      <div className='translate-y-[500%] group-hover:translate-y-0 transition-all duration-300 delay-150'><Link target='_blank' href={image.link}>Site</Link></div>
                       {/* ícone */}
                       <div className='text-xl translate-y-[500%] group-hover:translate-y-0 transition-all duration-300 delay-200'><BsArrowRight /></div>
 

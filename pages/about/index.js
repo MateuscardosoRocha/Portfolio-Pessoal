@@ -2,78 +2,68 @@
 /* eslint-disable react/jsx-key */
 import React, { useState } from 'react'
 
-import { FaHtml5, FaCss3, FaJs, FaReact, FaWordpress, FaFigma } from 'react-icons/fa';
-import { SiNextdotjs, SiFramer, SiAdobexd, SiAdobephotoshop } from 'react-icons/si';
+import { FaHtml5, FaCss3, FaJs, FaReact, FaWordpress, FaFigma, FaAngular } from 'react-icons/fa';
+import {  SiAdobeillustrator, SiAdobephotoshop, SiTailwindcss } from 'react-icons/si';
 
 
 //  data
 const aboutData = [
   {
-    title: 'skills',
+    title: 'Tecnologias',
     info: [
       {
         title: 'Web Development',
         icons: [
           <FaHtml5 />,
           <FaCss3 />,
+          <SiTailwindcss/>,
           <FaJs />,
           <FaReact />,
-          <SiNextdotjs />,
-          <SiFramer />,
+          <FaAngular/>,
           <FaWordpress />,
         ],
       },
       {
         title: 'UI/UX Design',
-        icons: [<FaFigma />, <SiAdobexd />, <SiAdobephotoshop />],
+        icons: [<FaFigma />, <SiAdobeillustrator />, <SiAdobephotoshop />],
       },
     ],
   },
+  // {
+  //   title: 'awards',
+  //   info: [
+  //     {
+  //       title: 'Webby Awards - Honoree',
+  //       stage: '2011 - 2012',
+  //     },
+  //     {
+  //       title: 'Adobe Design Achievement Awards - Finalist',
+  //       stage: '2009 - 2010',
+  //     },
+  //   ],
+  // },
   {
-    title: 'awards',
+    title: 'Experiência',
     info: [
       {
-        title: 'Webby Awards - Honoree',
-        stage: '2011 - 2012',
+        title: 'Estágio de Desenvolvimento Web - Two Dogs',
+        stage: '2022 - 2023',
       },
-      {
-        title: 'Adobe Design Achievement Awards - Finalist',
-        stage: '2009 - 2010',
-      },
+     
     ],
   },
   {
-    title: 'experience',
+    title: 'Formação',
     info: [
       {
-        title: 'UX/UI Designer - XYZ Company',
-        stage: '2012 - 2023',
+        title: 'Ensino Médio',
+        stage: '2021',
       },
       {
-        title: 'Web Developer - ABC Agency',
-        stage: '2010 - 2012',
-      },
-      {
-        title: 'Intern - DEF Corporation',
-        stage: '2008 - 2010',
-      },
-    ],
-  },
-  {
-    title: 'credentials',
-    info: [
-      {
-        title: 'Web Development - ABC University, LA, CA',
-        stage: '2011',
-      },
-      {
-        title: 'Computer Science Diploma - AV Technical Institute',
-        stage: '2009',
-      },
-      {
-        title: 'Certified Graphic Designer - ABC Institute, Los Angeles, CA',
-        stage: '2006',
-      },
+        title: 'Análise e Desenvolvimento de Sistemas - PUCPR',
+        stage: '2024',
+      }
+    
     ],
   },
 ];
@@ -105,72 +95,67 @@ const About = () => {
 
       <div className='flex-1 flex flex-col justify-center'>
         <motion.h2
-         variants={fadeIn('right', 0.2)}
-         initial="hidden"
-         animate="show"
-         exit="hidden"
-        className='h2'>Captivating <span className='text-accent'>stories</span> birth mafnigicent designs.</motion.h2>
+          variants={fadeIn('right', 0.2)}
+          initial="hidden"
+          animate="show"
+          exit="hidden"
+          className='h2 mt-12'>Era Uma Vez <span className='text-accent'> ...</span> </motion.h2>
 
 
 
         <motion.p
-        variants={fadeIn('right', 0.4)}
-        initial="hidden"
-        animate="show"
-        exit="hidden"
-        className='max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0'>10 years ago, I began freelancing as a developer. Since then, 
-        I've done remote work for agencies, counsulted for startups, and collaborated on digital products for business and consumer use.</motion.p>
+          variants={fadeIn('right', 0.4)}
+          initial="hidden"
+          animate="show"
+          exit="hidden"
+          className='max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0'>Há 2 anos, dei início a jornada na área da Tecnologia.  Desde então, tenho mergulhado em estudos, buscando dominar esse mundo.
+          <br/>Tenho me desenvolvido na área através da criação de aplicações freelancer. <br/>Cada projeto é uma oportunidade para encontrar soluções inovadoras para os problemas.
+        </motion.p>
 
-      <motion.div
-      variants={fadeIn('right', 0.6)}
-      initial="hidden"
-      animate="show"
-      exit="hidden"
-      className='hidden md:flex md:max-w-xl xl:max-w-none mx-auto xl:mx-0 mb-8'>
-        <div className='flex flex-1 xl:gap-x-6'>
-          <div className='relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0'>
-            <div className='text-2xl xl:text-4xl font-extrabold text-accent mb-2'>
-              <CountUp start={0} end={10} duration={5}/> +
+        <motion.div
+          variants={fadeIn('right', 0.6)}
+          initial="hidden"
+          animate="show"
+          exit="hidden"
+          className='hidden md:flex md:max-w-xl xl:max-w-none mx-auto xl:mx-0 mb-8'>
+          <div className='flex flex-1 xl:gap-x-6'>
+            <div className='relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0'>
+              <div className='text-2xl xl:text-4xl font-extrabold text-accent mb-2'>
+                <CountUp start={0} end={2} duration={5} /> +
+              </div>
+              <div className='text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]'>Anos de experiência</div>
             </div>
-            <div className='text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]'>Years of experience</div>
-          </div>
-          {/* clients */}
-          <div className='relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0'>
-            <div className='text-2xl xl:text-4xl font-extrabold text-accent mb-2'>
-              <CountUp start={0} end={250} duration={5}/> +
+            {/* clients */}
+            <div className='relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0'>
+              <div className='text-2xl xl:text-4xl font-extrabold text-accent mb-2'>
+                <CountUp start={0} end={11} duration={5} /> +
+              </div>
+              <div className='text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]'>Clientes Satisfeitos</div>
             </div>
-            <div className='text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]'>Satisfied Clients</div>
-          </div>
 
-          {/* Projects */}
-          <div className='relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0'>
-            <div className='text-2xl xl:text-4xl font-extrabold text-accent mb-2'>
-              <CountUp start={0} end={650} duration={5}/> +
+            {/* Projects */}
+            <div className='relative flex-1 after:w-[1px] after:h-full  after:absolute after:top-0 after:right-0'>
+              <div className='text-2xl xl:text-4xl font-extrabold text-accent mb-2'>
+                <CountUp start={0} end={16} duration={5} /> +
+              </div>
+              <div className='text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]'>Projetos concluídos </div>
             </div>
-            <div className='text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]'>Finished Projects </div>
+       
           </div>
-          {/* Awards */}
-          <div className='relative flex-1'>
-            <div className='text-2xl xl:text-4xl font-extrabold text-accent mb-2'>
-              <CountUp start={0} end={8} duration={5}/> +
-            </div>
-            <div className='text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]'>Winning awards </div>
-          </div>
-        </div>
-      </motion.div>
-     
-     
+        </motion.div>
+
+
       </div>
 
       {/* Info */}
 
 
       <motion.div
-      variants={fadeIn('left', 0.4)}
-      initial="hidden"
-      animate="show"
-      exit="hidden"
-      className='flex flex-col w-full xl:max-w-[48%] h-[480px]'>
+        variants={fadeIn('left', 0.4)}
+        initial="hidden"
+        animate="show"
+        exit="hidden"
+        className='flex flex-col w-full xl:max-w-[48%] h-[480px]'>
         <div className='flex gap-x-4 xl:gap-x-8 mx-auto xl:mx-0 mb-4'>
           {aboutData.map((item, itemIndex) => {
             return (

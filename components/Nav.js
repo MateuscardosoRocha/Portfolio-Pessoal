@@ -2,17 +2,17 @@
 import { HiHome, HiUser, HiRectangleGroup, HiViewColumns, HiChatBubbleBottomCenterText, HiEnvelope } from 'react-icons/hi2'
 
 export const navData = [
-  { name: 'home', path: '/', icon: <HiHome /> },
-  { name: 'about', path: '/about', icon: <HiUser /> },
-  { name: 'services', path: '/services', icon: <HiRectangleGroup /> },
-  { name: 'work', path: '/work', icon: <HiViewColumns /> },
+  { name: 'Home', path: '/', icon: <HiHome /> },
+  { name: 'Sobre', path: '/about', icon: <HiUser /> },
+  { name: 'Serviços', path: '/services', icon: <HiRectangleGroup /> },
+  { name: 'Trabalhos', path: '/work', icon: <HiViewColumns /> },
   {
-    name: 'testimonials',
+    name: 'Depoimentos',
     path: '/testimonials',
     icon: <HiChatBubbleBottomCenterText />,
   },
   {
-    name: 'contact',
+    name: 'Contato',
     path: '/contact',
     icon: <HiEnvelope />,
   },
@@ -33,7 +33,7 @@ const Nav = () => {
 
       {/* Conteudo */}
       <div className='flex w-full xl:flex-col items-center justify-between xl:justify-center gap-y-10 
-      px-4 md:px-40 xl:px-0 h-[80px] xl:h-max py-8 bg-white/10 backdrop-blur-sm text-3xl xl:text-xl xl:rounded-full'>
+      px-4 md:px-40 xl:px-0 h-[50px] xl:h-max py-8 bg-white/10 backdrop-blur-sm text-3xl xl:text-xl xl:rounded-full'>
         {navData.map((link, index) => {
 
           return (

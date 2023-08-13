@@ -18,7 +18,8 @@ const Home = () => {
           initial="hidden"
           animate="show"
           exit="hidden"
-          className='h1'>Transforming Ideas <br /> Into <span className='text-accent'>Digital Reality</span>
+          className='h1'>
+          Transformando Idéias <br /> Em <span className='text-accent'>Realidade Digital</span>
         </motion.h1>
 
         <motion.p
@@ -26,7 +27,10 @@ const Home = () => {
           initial="hidden"
           animate="show"
           exit="hidden"
-          className='max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16'>Lorem Ipsum tem sido o padrão desde a Idade Média. Um pintor teria peças mistas de texto em um livro exemplar e é este texto que nós usamos hoje. Outra versão diz que este é um trecho do livro de Cícero:  De Finibus Bonorum e malorum  seções 1.10.32 / 1.10.33. Este livro, muito popular durante a Renascença, é um tratado sobre a teoria da ética.</motion.p>
+          className='max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16'>
+            Olá, eu sou o <span className='text-accent'>Mateus</span>, um desenvolvedor <span className='text-accent italic'>FULL-STACK</span> dedicado a criar aplicações com design elegante e foco na experiência do usuário. <br/>Estou comprometido em garantir que meus projetos deixem uma marca positiva.
+
+          </motion.p>
 
         <div className='flex justify-center xl:hidden relative'>
           <ProjectsBtn />
@@ -36,7 +40,7 @@ const Home = () => {
           initial="hidden"
           animate="show"
           exit="hidden"
-          className="hidden xl:flex"><ProjectsBtn /></motion.div>
+          className="hidden xl:flex "><ProjectsBtn /></motion.div>
 
       </div>
     </div>

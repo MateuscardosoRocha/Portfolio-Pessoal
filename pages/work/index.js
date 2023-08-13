@@ -4,6 +4,8 @@ import WorkSlider from '../../components/WorkSlider';
 import Bulb from '../../components/Bulb'
 import Circles from '../../components/Circles'
 
+import Link from 'next/link';
+
 import { motion } from 'framer-motion';
 import { fadeIn } from '../../variants'
 
@@ -22,14 +24,14 @@ const Work = () => {
             exit="hidden"
 
             className='h2 xl:mt-12'>
-            My Work <span className='text-accent'>.</span>
+            Meus Trabalhos<span className='text-accent'>.</span>
           </motion.h2>
           <motion.p
             variants={fadeIn('up', 0.4)}
             initial="hidden"
             animate="show"
             exit="hidden"
-            className='mb-4 max-w-[400px] mx-auto lg:mx-0'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. A eveniet dignissimos distinctio tempore harum laudantium.</motion.p>
+            className='mb-4 max-w-[400px] mx-auto lg:mx-0'>Aqui estão os meus principais projetos de desenvolvimentos Web, <Link target='_blank' href='https://api.whatsapp.com/send/?phone=5541987742206&text=Ola%20Mateus,%20vim%20pelo%20seu%20Portfólio!!%20Poderia%20me%20mostrar%20mais%20projetos?'><span className='text-accent'>Quer ver mais?</span></Link></motion.p>
         </div>
         <motion.div
 
